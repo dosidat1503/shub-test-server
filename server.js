@@ -67,7 +67,7 @@ app.post("/api/query-base-array-output", async (req, res) => {
     
     axios.post(
         url,
-        { result },
+        result,
         { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } }
     )
     .then(response => {
